@@ -15,7 +15,8 @@ const productSchema = new mongoose.Schema({
     "proID": String,
     "proName": String,
     "price":Number,
-    "qty":Number
+    "qty":Number,
+    "image":String
 })
 
 const productModel = new mongoose.model("productModel", productSchema, "Product")
@@ -35,7 +36,8 @@ app.post("/api/post", async function (req, res){
         "proID": req.body.proID,
         "proName": req.body.proName,
         "price": req.body.price,
-        "qty": req.body.qty
+        "qty": req.body.qty,
+        "image" : req.body.image
     }).then((result)=>{
         res.json(result)
     })

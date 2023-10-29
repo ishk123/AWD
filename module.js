@@ -11,6 +11,8 @@ app.controller("myCTRL", function($scope, $http){
         {userID:'User2',pwd:'user1'},
         {userID:'User3',pwd:'user1'},
         {userID:'User4',pwd:'user1'},
+        {userID:'123',pwd:'123'},
+
     ]
     
     $scope.stat
